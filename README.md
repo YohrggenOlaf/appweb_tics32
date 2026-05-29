@@ -72,7 +72,7 @@ git add .
 Crear el punto de control con los cambios realizados al proyecto.
 
 ````shell
-git commit - m "CREATED conggiguración del virtual environment"
+git commit -m "CREATED conggiguración del virtual environment"
 ````
 
 ## 10. Sincronizar los cambios al repositorio
