@@ -16,7 +16,8 @@ class Calculadora:
         return render.calculadora()
     
     def POST(self):
-        return "Metodo Implementado"
+        formulario = web.input()
+        return f"Formulario: {formulario}"
     
 if __name__ == "__main__":
     app.run()
