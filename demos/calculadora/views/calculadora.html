@@ -1,3 +1,4 @@
+$def with (numero_1, numero_2, resultado)
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -12,13 +13,22 @@
         <p>Ingrese los datos</p>
         <form method="post">
             <label for="prinum">Primer número:</label><br>
-            <input type="number" id="prinum" name="prinum"><br>
-            <label for="segnum">Segundo número:</label><br>
-            <input type="number" id="segnum" name="segnum"><br>
-            <label for="resultado">Resultado de la operación:</label><br>
-            <input type="number" id="resultado" name="resultado"><br>
+            <input type="number" id="prinum" name="prinum" value=$numero_1><br>
 
-            <button name="suma" id="suma">Sumar</botton>
+            <br><label for="segnum">Segundo número:</label><br>
+            <input type="number" id="segnum" name="segnum" value=$numero_2><br>
+
+            <br><label for="resultado">Resultado de la operación:</label><br>
+            <input type="number" id="resultado" name="resultado" value=$resultado><br>
+
+            <br><button name="operacion" id="operacion" value="suma">Suma</button>
+            <button name="operacion" id="operacion" value="resta">Resta</button>
+            <button name="operacion" id="operacion" value="multiplica">Multiplica</button>
+            <button name="operacion" id="operacion" value="divide">Divide</button>
+            <button name="operacion" id="operacion" value="modulo">Modulo</button>
+            <button name="operacion" id="operacion" value="potencia">Potencia</button>
+            <button name="operacion" id="operacion" value="raiz">Raiz Cuadrada</button><br>
+            <br><button name="operacion" id="operacion" value="redondear">Redondear resultado</button>
         </form>
     </body>
 </html>

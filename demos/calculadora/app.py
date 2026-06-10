@@ -13,11 +13,17 @@ class Index:
 
 class Calculadora:
     def GET(self):
-        return render.calculadora()
+        numero_1 = 0.0
+        numero_2 = 0.0
+        resultado = 0.0
+        return render.calculadora(numero_1, numero_2, resultado)
     
     def POST(self):
         formulario = web.input()
-        return f"Formulario: {formulario}"
-    
+        numero_1 = formulario['prinum']
+        numero_2 = formulario['segnum']
+        resultado = float(numero_1) + float(numero_2)
+        return render.calculadora(numero_1, numero_2, resultado)
+
 if __name__ == "__main__":
     app.run()
