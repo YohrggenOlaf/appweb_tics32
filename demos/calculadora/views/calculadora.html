@@ -10,12 +10,12 @@ $def with (numero_1, numero_2, resultado)
         <h1>La calculadora basica e increible de Shushu</h1>
         <a href="/">Ir a la página Principal</a>
 
-        <p>Ingrese los datos</p>
+        <b><p>Ingrese los datos</p>
         <form method="post">
             <label for="prinum">Primer número:</label><br>
             <input type="number" id="prinum" name="prinum" value=$numero_1><br>
 
-            <br><label for="segnum">Segundo número:</label><br>
+            <br><label for="segnum">Segundo número (No se necesita en caso de raiz cuadrada):</label><br>
             <input type="number" id="segnum" name="segnum" value=$numero_2><br>
 
             <br><label for="resultado">Resultado de la operación:</label><br>
@@ -28,7 +28,6 @@ $def with (numero_1, numero_2, resultado)
             <button name="operacion" id="operacion" value="modulo">Modulo</button>
             <button name="operacion" id="operacion" value="potencia">Potencia</button>
             <button name="operacion" id="operacion" value="raiz">Raiz Cuadrada</button><br>
-            <br><button name="operacion" id="operacion" value="redondear">Redondear resultado</button>
         </form>
     </body>
 </html>
